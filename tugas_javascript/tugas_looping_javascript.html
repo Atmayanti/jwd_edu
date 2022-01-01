@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function show() {
+                var tampil = document.getElementById("show");
+                var opt = document.getElementById("frm").looping.value;
+
+                if (opt == "for") {
+                    tampil.innerHTML = "PERULANGAN FOR<br><br>";
+                    for (let i = 1; i <= 10 ; i++) {
+                        tampil.innerHTML += "Perulangan for ke-"+i+"<br>"
+                    }
+                }
+                if (opt == "while") {
+                    tampil.innerHTML = "PERULANGAN WHILE<br><br>";
+                    let i = 1;
+                    while (i <= 10) {
+                        tampil.innerHTML += "Perulangan while ke-"+i+"<br>";
+                        i++;
+                    }
+                }
+                if (opt == "dowhile") {
+                    tampil.innerHTML = "PERULANGAN DO WHILE<br><br>";
+                    let i = 1;
+                    do {
+                        tampil.innerHTML += "Perulangan do-while ke-" + i + "<br>";
+                        i++;
+                    } while (i<=10);
+                }
+                if (opt == "foreach") {
+                    tampil.innerHTML = "PERULANGAN FOREACH<br><br>";
+                    array = [1, 2, 3, 4, 5,6 ,7 ,8 ,9, 10];
+                    array.forEach(i => {
+                        tampil.innerHTML += "Perulangan foreach ke-" + i + "<br>";
+                    });
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form id="frm" onsubmit="return false">
+            <select id="looping">
+                <option value="for">For</option>
+                <option value="while">While</option>
+                <option value="dowhile">Do-While</option>
+                <option value="foreach">Foreach</option>
+            </select>
+            <button id="btn" type="Submit" onclick="show()">Pilih</button>
+        </form>
+        <p id="show"></p>
+    </body>
+</html>

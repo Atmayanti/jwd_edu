@@ -1,0 +1,77 @@
+body{
+    margin-top: 4%;
+    background-color: rgb(237, 237, 237);
+}
+.container{
+    text-align: center;
+}
+.box{
+    padding: 30px 40px 30px 40px;
+    background-color: white;
+    margin: 5px;
+    width: 290px;
+    height: auto;
+    display: inline-block;
+    border: rgba(209, 209, 209, 0.878) solid 1px;
+}
+.pic-insta{
+    width: 200px;
+    margin-bottom: 10px;
+}
+.bag-form{
+    width: 270px;
+    height: 30px;
+    margin-bottom: 7px;
+    font-family: arial;
+    color: rgba(226, 226, 226, 0.871);
+    background-color: rgba(248, 248, 248, 0.912);
+    border: rgba(209, 209, 209, 0.878) solid 1px;
+    padding: 5px 0px 5px 10px;
+}
+.btn-login{
+    width: 280px;
+    height: 30px;
+    margin: 10px 0px 15px 0px;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgba(156, 209, 250, 0.912);
+    border: none;
+    font-weight: bold;
+}
+.bag-or{
+    color: rgb(187, 187, 187);
+}
+.or{
+    margin: 0px 5px 20px 5px;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(138, 138, 138);
+}
+.garis{
+    width: 42%;
+    display: inline-block;
+    border-color: rgba(255, 255, 255, 0.871);
+}
+.bag-fb{
+    color: #384778;
+    font-family: verdana;
+    font-size: 12px;
+}
+.ic-fb{
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+.forgot{
+    font-size: 11px;
+}
+.bag-bwh{
+    font-family: Arial;
+    font-size: 14px;
+}
+.sign-up{
+    text-decoration: none;
+    color: rgb(56, 152, 226);
+}
