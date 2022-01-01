@@ -1,3 +1,3 @@
 Ini adalah folder untuk percobaan Junior Web Developer
-- Atmayanti
+- Atmayanto
 - Ferdy Hanan Pradana
