@@ -10,9 +10,9 @@
     </head>
     <body>
         <form action="../config/check_login.php" method="POST">
-            <input type="email">
-            <input type="password">
-            <button type="submit">Sumbit</button>
+            <input type="email" name="email">
+            <input type="password" name="pass">
+            <button type="submit" name="submit">sumbit</button>
         </form>
     </body>
 </html>

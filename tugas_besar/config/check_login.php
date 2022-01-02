@@ -2,21 +2,21 @@
     session_start();
     $_SESSION['sesi'] = NULL;
 
-    include "connct.php";
+    include "connect.php";
     if(isset($_POST['submit'])){
-        $email = isset($_POST['email']) ? $_POST['email']:"";
-        $password = isset($_POST['pass']) ? $_POST['pass']:"";
-        $query = mysqli_query($connect, "SELECT * FROM user WHERE email = '$email' AND password = '$pass'");
+        $email = $_POST['email'];
+        $password = $_POST['pass'];
+        $query = mysqli_query($connect, "SELECT * FROM user WHERE email = '$email' AND password = '$password'");
         $row = mysqli_fetch_assoc($query);
 
         if($row['accesslevel'] == 1){
             $userid = $row['userid'];
             $query_admin = mysqli_query($connect,"SELECT * FROM admins WHERE userid = '$userid'");
-            $data_admin = mysqli_fetch_array($query);
+            $data_admin = mysqli_fetch_array($query_admin);
             $_SESSION['adminid'] = $data_admin['adminid'];
             $_SESSION['sesi'] = $data_admin['name'];?>
             <script>alert('Anda Berhasil Login Admin!')</script>
-            <a href="homeAdmin.php">KLik untuk melanjutkan</a>
+            <a href="../pages/homeAdmin.php">KLik untuk melanjutkan</a>
             <?php
         }
         else if($row['accesslevel'] == 2){
