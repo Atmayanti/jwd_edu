@@ -26,12 +26,12 @@
             $_SESSION['memberid'] = $data_member['memberid'];
             $_SESSION['sesi'] = $data_member['name'];?>
             <script>alert('Anda Berhasil Login Member!')</script>
-            <a href="homeMember.php">KLik untuk melanjutkan</a>
+            <a href="../pages/">KLik untuk melanjutkan</a>
             <?php
         } else {
             ?>
             <script>alert('Anda Gagal Login')</script>
-            <a href="login.php">KLik untuk melanjutkan</a>
+            <a href="../pages/login.php">KLik untuk melanjutkan</a>
             <?php 
         }
     }
