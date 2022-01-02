@@ -16,9 +16,9 @@ if (isset($_SESSION['sesi'])) {
     </head>
 
     <body>
-        <p>Selamat datang Admin <?php echo $_SESSION['sesi'] ?></p>
-
+        <p>Selamat Datang Member<?php echo $_SESSION['sesi']?></p>
     </body>
+    </html>
 <?php
 }
 ?>

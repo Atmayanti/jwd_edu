@@ -22,9 +22,9 @@
         else if($row['accesslevel'] == 2){
             $userid = $row['userid'];
             $query_member = mysqli_query($connect,"SELECT * FROM members WHERE userid = '$userid'");
-            $data_member = mysqli_fetch_array($query);
-            $_SESSION['memberid'] = $data_admin['memberid'];
-            $_SESSION['sesi'] = $data_admin['name'];?>
+            $data_member = mysqli_fetch_array($query_member);
+            $_SESSION['memberid'] = $data_member['memberid'];
+            $_SESSION['sesi'] = $data_member['name'];?>
             <script>alert('Anda Berhasil Login Member!')</script>
             <a href="homeMember.php">KLik untuk melanjutkan</a>
             <?php
